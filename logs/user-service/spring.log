@@ -567,3 +567,9 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3 millisec
 09:58:29:972 DEBUG 7356 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
 09:58:29:973 DEBUG 7356 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
 09:58:29:977 DEBUG 7356 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+18:06:48:506 DEBUG 7356 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+18:06:48:517 DEBUG 7356 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+18:06:48:541 DEBUG 7356 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+18:19:36:236 DEBUG 7356 --- [http-nio-8083-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+18:19:36:237 DEBUG 7356 --- [http-nio-8083-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+18:19:36:249 DEBUG 7356 --- [http-nio-8083-exec-6] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
