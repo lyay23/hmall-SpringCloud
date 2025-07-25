@@ -4347,3 +4347,15 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 1 millisec
 19:49:36:137 DEBUG 8924 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
 19:49:36:148 DEBUG 8924 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1948568552643084289(Long)
 19:49:36:183 DEBUG 8924 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+20:43:01:389  WARN 8924 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:43:01:393  WARN 8924 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:43:01:408  WARN 8924 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:43:01:412  WARN 8924 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:43:01:627  INFO 8924 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+20:43:01:637  INFO 8924 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+20:43:01:975  INFO 8924 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+20:43:01:975  INFO 8924 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1818d00b[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+20:43:01:977  INFO 8924 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1753430102415_192.168.163.1_50297
+20:43:01:979  INFO 8924 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@41492479[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 5025]
+20:43:01:997  INFO 8924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:43:02:061  INFO 8924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
