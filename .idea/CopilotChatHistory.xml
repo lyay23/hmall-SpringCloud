@@ -4,6 +4,24 @@
     <option name="conversations">
       <list>
         <Conversation>
+          <option name="createTime" value="1753527054382" />
+          <option name="id" value="0198465b702e7705a173d020682aeb88" />
+          <option name="title" value="新对话 2025年7月26日 18:50:54" />
+          <option name="updateTime" value="1753527054382" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1753495610044" />
+          <option name="id" value="0198447ba2bc7006b8dd8f3cd1041ae1" />
+          <option name="title" value="新对话 2025年7月26日 10:06:50" />
+          <option name="updateTime" value="1753495610044" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1753447898713" />
+          <option name="id" value="019841a39e59744dbcf0fd1def25d547" />
+          <option name="title" value="新对话 2025年7月25日 20:51:38" />
+          <option name="updateTime" value="1753447898713" />
+        </Conversation>
+        <Conversation>
           <option name="createTime" value="1753401976928" />
           <option name="id" value="019808d829057ccfaeb647e630204c60" />
           <option name="title" value="/fix修复报错:&#10;java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not &quot;opens java.lang.invoke&quot; to unnamed module @467aecef&#10;&#9;at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391) ~[na:na]&#10;&#9;at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367) ~[na:na]&#10;&#9;at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315) ~[na:na]&#10;&#9;at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183) ~[na:na]&#10;&#9;at java.base/java.lang.reflect.Field.setAccessible(Field.java:177) ~[na:na]&#10;&#9;at com.baomidou.mybatisplus.core.toolkit.SetAccessibleAction.run(SetAccessibleAction.java:18) ~[mybatis-plus-core-3.4.3.jar:3.4.3]&#10;&#9;at com.baomidou.mybatisplus.core.toolkit.SetAccessibleAction.run(SetAccessibleAction.java:9) ~[mybatis-plus-core-3.4.3.jar:3.4.3]&#10;&#9;at java.base/java.security.AccessController.doPrivileged(AccessController.java:319) ~[na:na]&#10;&#9;at com.baomidou.mybatisplus.core.toolkit.ReflectionKit.setAccessible(ReflectionKit.java:203) ~[mybatis-plus-core-3.4.3.jar:3.4.3]&#10;&#9;at com.baomidou.mybatisplus.core.toolkit.support.SerializedLambdaMeta.&lt;clinit&gt;(SerializedLambdaMeta.java:19) ~[mybatis-plus-core-3.4.3.jar:3.4.3]&#10;&#9;... 128 common frames omitted&#10;代码上下文:&#10;```java&#10;private void throwInaccessibleObjectException(Class&lt;?&gt; caller, Class&lt;?&gt; declaringClass) {&#10;    boolean isClassPublic = Modifier.isPublic(declaringClass.getModifiers());&#10;    String pn = declaringClass.getPackageName();&#10;    int modifiers = ((Member)this).getModifiers();&#10;&#10;    // not accessible&#10;    String msg = &quot;Unable to make &quot;;&#10;    if (this instanceof Field)&#10;        msg += &quot;field &quot;;&#10;    msg += this + &quot; accessible&quot;;&#10;    msg += caller == null ? &quot; by JNI attached native thread with no caller frame: &quot; : &quot;: &quot;;&#10;    msg += declaringClass.getModule() + &quot; does not \&quot;&quot;;&#10;    if (isClassPublic &amp;&amp; Modifier.isPublic(modifiers))&#10;        msg += &quot;exports&quot;;&#10;    else&#10;        msg += &quot;opens&quot;;&#10;    msg += &quot; &quot; + pn + &quot;\&quot;&quot; ;&#10;    if (caller != null)&#10;        msg += &quot; to &quot; + caller.getModule();&#10;    InaccessibleObjectException e = new InaccessibleObjectException(msg);&#10;    if (printStackTraceWhenAccessFails()) {&#10;        e.printStackTrace(System.err);&#10;    }&#10;    throw e;&#10;}&#10;```" />
