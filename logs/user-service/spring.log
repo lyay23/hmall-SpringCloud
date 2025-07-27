@@ -2619,3 +2619,6 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 119 millis
 14:45:16:190  INFO 10124 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8b6a3515-321a-4aeb-a752-63bad970b5ef] Notify connected event to listeners.
 14:45:20:530  INFO 10124 --- [nacos-grpc-client-executor-3048] com.alibaba.nacos.common.remote.client   : [8b6a3515-321a-4aeb-a752-63bad970b5ef] Receive server push request, request = NotifySubscriberRequest, requestId = 55
 14:45:20:532  INFO 10124 --- [nacos-grpc-client-executor-3048] com.alibaba.nacos.common.remote.client   : [8b6a3515-321a-4aeb-a752-63bad970b5ef] Ack server push request, request = NotifySubscriberRequest, requestId = 55
+15:51:15:738 DEBUG 10124 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+15:51:15:744 DEBUG 10124 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+15:51:15:760 DEBUG 10124 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1

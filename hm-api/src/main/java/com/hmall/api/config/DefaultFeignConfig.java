@@ -7,6 +7,9 @@ package com.hmall.api.config;
  * @Date: 2025/07/19/16:31
  * @Description:
  */
+
+import org.springframework.context.annotation.Bean;
+import com.hmall.api.client.fallback.ItemClientFallbackFactory;
 import com.hmall.common.utils.UserContext;
 import feign.Logger;
 import feign.RequestInterceptor;
@@ -41,5 +44,10 @@ public class DefaultFeignConfig {
                 }
             }
         };
+    }
+
+    @Bean
+    public ItemClientFallbackFactory itemClientFallbackFactory(){
+        return new ItemClientFallbackFactory();
     }
 }

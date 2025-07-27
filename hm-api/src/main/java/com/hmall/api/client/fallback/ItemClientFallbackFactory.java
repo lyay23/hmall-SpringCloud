@@ -6,6 +6,7 @@ import com.hmall.api.dto.OrderDetailDTO;
 import com.hmall.common.exception.BizIllegalException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.openfeign.FallbackFactory;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -25,9 +26,10 @@ public class ItemClientFallbackFactory implements FallbackFactory<ItemClient> {
                 return Collections.emptyList();
             }
 
-
+            @Override
             public void deductStock(List<OrderDetailDTO> items) {
-                throw new BizIllegalException(cause);
+                log.error("扣减库存出现异常", cause);
+                throw new RuntimeException("扣减库存出现异常", cause);
             }
         };
     }

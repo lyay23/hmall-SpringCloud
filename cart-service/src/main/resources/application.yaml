@@ -10,6 +10,9 @@ hm:
 feign:
   okhttp:
     enabled: true # 开启OKHttp功能
+  sentinel:
+    enabled: true # 开启Sentinel功能
+
 
 spring:
   cloud:
