@@ -10,3 +10,10 @@ hm:
 feign:
   okhttp:
     enabled: true # 开启OKHttp功能
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 192.168.163.129:8090  # Sentinel控制台地址
+      http-method-specify: true # 是否将HTTP请求的Method作为资源路由的标识符

@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="847178f1-2b99-4dd9-ade2-642e1b13d6d6" name="Changes" comment="使用nacos热部署">
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateway/routers/DynamicRouterLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CopilotChatHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CopilotChatHistory.xml" afterDir="false" />
+    <list default="true" id="847178f1-2b99-4dd9-ade2-642e1b13d6d6" name="Changes" comment="使用nacos热部署，网关动态路由">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log.2025-07-19.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/pay-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pay-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/pay-service/spring.log.2025-07-19.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/trade-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/trade-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log.2025-07-19.0.gz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +261,7 @@
       <workItem from="1753401962785" duration="11913000" />
       <workItem from="1753447886049" duration="104000" />
       <workItem from="1753495602062" duration="139000" />
-      <workItem from="1753527026735" duration="4376000" />
+      <workItem from="1753527026735" duration="9650000" />
     </task>
     <task id="LOCAL-00001" summary="黑马商城拆分完毕的初始化代码">
       <option name="closed" value="true" />
@@ -323,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753447970922</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="使用nacos热部署，网关动态路由">
+      <option name="closed" value="true" />
+      <created>1753584572834</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753584572834</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +341,7 @@
     <MESSAGE value="OpenFeign传递用户到下游微服务" />
     <MESSAGE value="公共pom配置交给nacos共享管理" />
     <MESSAGE value="使用nacos热部署" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用nacos热部署" />
+    <MESSAGE value="使用nacos热部署，网关动态路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用nacos热部署，网关动态路由" />
   </component>
 </project>

@@ -35,9 +35,7 @@ public class ItemController {
 
     @ApiOperation("根据id批量查询商品")
     @GetMapping
-    public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids){
-        return itemService.queryItemByIds(ids);
-    }
+    public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids){ return itemService.queryItemByIds(ids);}
 
     @ApiOperation("根据id查询商品")
     @GetMapping("{id}")
