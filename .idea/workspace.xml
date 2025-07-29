@@ -4,22 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="847178f1-2b99-4dd9-ade2-642e1b13d6d6" name="Changes" comment="使用Sentinel进行微服务保护">
+    <list default="true" id="847178f1-2b99-4dd9-ade2-642e1b13d6d6" name="Changes" comment="XA模式实现事务回滚">
+      <change afterPath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CopilotChatHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CopilotChatHistory.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CopilotWebChatHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CopilotWebChatHistory.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/CartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/CartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/ItemClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/ItemClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/fallback/ItemClientFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/client/fallback/ItemClientFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/ItemClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/fallback/ItemClientFallbackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/fallback/ItemClientFallbackFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/fallback/ItemClientFallbackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/client/fallback/ItemClientFallbackFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/target/classes/com/hmall/api/config/DefaultFeignConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/Impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/Impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/Impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/Impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/controller/ItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/Impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/target/classes/com/hmall/item/service/Impl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hm-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-service/spring.log.2025-07-14.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-service/spring.log.2025-07-15.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-service/spring.log.2025-07-16.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-service/spring.log.2025-07-19.0.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/item-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/item-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/pay-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/pay-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/trade-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/trade-service/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/user-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/user-service/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/target/classes/com/hmall/trade/service/impl/OrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +103,13 @@
     &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ItemApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.PayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TradeApplication .executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.TradeApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.UserApplication .executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/idea_project/2025/iteam/hmall/hm-gateway/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/idea_project/2025/iteam/hmall/trade-service/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -115,11 +130,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea_project\2025\iteam\hmall\trade-service\src\main\resources" />
+      <recent name="E:\idea_project\2025\iteam\hmall\item-service\src\main\resources" />
       <recent name="E:\idea_project\2025\iteam\hmall\hm-gateway\src\main\resources" />
       <recent name="E:\idea_project\2025\iteam\hmall\hm-gateway\src\main\java\com\hmall\gateway\config" />
       <recent name="E:\idea_project\2025\iteam\hmall" />
-      <recent name="E:\idea_project\2025\iteam\hmall\hm-api\src\main\java\com\hmall\api\client" />
-      <recent name="E:\idea_project\2025\iteam\hmall\pay-service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\idea_project\2025\iteam\hmall" />
@@ -160,7 +175,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="cart-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.cart.CartApplication" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang.invoke=ALL-UNNAMED" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,7 +208,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="item-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.item.ItemApplication" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang.invoke=ALL-UNNAMED" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -215,12 +230,12 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="trade-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.trade.TradeApplication" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED " />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -232,13 +247,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.TradeApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.CartApplication" />
-      <item itemvalue="Spring Boot.TradeApplication" />
       <item itemvalue="Spring Boot.PayApplication" />
       <item itemvalue="Spring Boot.HMallApplication" />
       <item itemvalue="Spring Boot.ItemApplication" />
-      <item itemvalue="Spring Boot.UserApplication " />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -267,7 +282,8 @@
       <workItem from="1753401962785" duration="11913000" />
       <workItem from="1753447886049" duration="104000" />
       <workItem from="1753495602062" duration="139000" />
-      <workItem from="1753527026735" duration="13181000" />
+      <workItem from="1753527026735" duration="17983000" />
+      <workItem from="1753661036068" duration="7566000" />
     </task>
     <task id="LOCAL-00001" summary="黑马商城拆分完毕的初始化代码">
       <option name="closed" value="true" />
@@ -341,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753599006374</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fallback">
+      <option name="closed" value="true" />
+      <created>1753603859755</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753603859755</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +381,8 @@
     <MESSAGE value="使用nacos热部署" />
     <MESSAGE value="使用nacos热部署，网关动态路由" />
     <MESSAGE value="使用Sentinel进行微服务保护" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Sentinel进行微服务保护" />
+    <MESSAGE value="Fallback" />
+    <MESSAGE value="XA模式实现事务回滚" />
+    <option name="LAST_COMMIT_MESSAGE" value="XA模式实现事务回滚" />
   </component>
 </project>
