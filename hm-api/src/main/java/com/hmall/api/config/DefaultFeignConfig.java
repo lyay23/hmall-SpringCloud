@@ -50,4 +50,7 @@ public class DefaultFeignConfig {
     public ItemClientFallbackFactory itemClientFallbackFactory(){
         return new ItemClientFallbackFactory();
     }
+
+    @Bean
+    public PayClientFallback payClientFallback(){return new PayClientFallback();}
 }

@@ -18,4 +18,5 @@ public interface IOrderService extends IService<Order> {
 
     void markOrderPaySuccess(Long orderId);
 
+    void canselOrder(Long orderId);
 }
